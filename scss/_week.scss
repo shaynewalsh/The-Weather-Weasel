@@ -1,0 +1,47 @@
+.week {
+  height: 100%;
+  background-color: #fff;
+  align-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.week h1 {
+  text-align: center;
+  align-self: center;
+  place-items: center;
+}
+
+@media screen and (min-width: 60em) {
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.col {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-content: center;
+  text-align: center;
+  place-items: center;
+  border-top: 4px dotted black;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.week img {
+  height: auto;
+  width: 80px;
+}
+
+.col .low {
+  color: #59a8f5;
+}
+
+.col .high {
+  color: #ff2f3c;
+}

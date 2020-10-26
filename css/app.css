@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  font-family: 'Patrick Hand SC', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4; }
+
+body h1 {
+  font-family: 'Patrick Hand SC', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem; }
+
+body p {
+  font-family: 'Patrick Hand SC', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem; }
+
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-bottom: 8px solid black;
+  display: grid;
+  grid-template-rows: 3fr 2fr 1fr;
+  grid-template-columns: 1fr;
+  place-items: center;
+  text-align: center;
+  padding: 3rem;
+  z-index: 1;
+  -webkit-transition-property: width height background-color font-size left top -webkit-transform transform color;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: width height background-color font-size left top transform -webkit-transform color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out; }
+
+.cover button {
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: #f9ff91;
+  color: #000;
+  font-family: 'Patrick Hand SC', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  place-items: center;
+  text-align: center; }
+
+.welcome-img {
+  grid-column: 1;
+  grid-row: 1; }
+
+.welcome-button {
+  grid-column: 1;
+  grid-row: 2;
+  place-items: top; }
+
+.welcome-logo {
+  grid-column: 1;
+  grid-row: 3; }
+
+.welcome-img img {
+  height: auto;
+  width: 20rem; }
+
+.welcome-logo img {
+  height: auto;
+  width: 10rem; }
+
+.open {
+  transform: translateY(-100%); }
+
+.temps-labels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr; }
+
+.temps-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: linear-gradient(90deg, #59a8f5 20%, #ff2f3c 100%);
+  border-radius: 100px;
+  -webkit-box-shadow: inset 0px 0px 0px 4px #000;
+  -moz-box-shadow: inset 0px 0px 0px 4px #000;
+  box-shadow: inset 0px 0px 0px 4px #000; }
+
+.today {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 2fr;
+  align-items: center;
+  text-align: center; }
+
+.location-section {
+  grid-column: 1;
+  grid-row: 1; }
+
+.location-section i {
+  padding-right: 1rem; }
+
+.weasel-description {
+  grid-column: 1;
+  grid-row: 2; }
+
+.weasel-description img {
+  width: 70%;
+  height: auto; }
+
+@media screen and (min-width: 40em) {
+  .weasel-description img {
+    width: 400px;
+    height: auto; } }
+.temps {
+  grid-column: 1;
+  grid-row: 3;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 70%; }
+
+.temps ul {
+  margin: 0;
+  list-style: none; }
+
+.high-label {
+  grid-column: 3;
+  grid-row: 1;
+  vertical-align: bottom;
+  display: table-cell; }
+
+.current-label {
+  grid-column: 2;
+  grid-row: 1;
+  vertical-align: bottom;
+  display: table-cell; }
+
+.low-label {
+  grid-column: 1;
+  grid-row: 1;
+  vertical-align: bottom;
+  display: table-cell; }
+
+.high-temp {
+  grid-column: 3;
+  grid-row: 1; }
+
+.high-temp p {
+  color: #fff; }
+
+.current-temp {
+  grid-column: 2;
+  grid-row: 1; }
+
+.current-temp p {
+  color: #fff;
+  border: 4px solid black;
+  border-radius: 100px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.low-temp {
+  grid-column: 1;
+  grid-row: 1; }
+
+.low-temp p {
+  color: #fff; }
+
+.week {
+  height: 100%;
+  background-color: #fff;
+  align-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+.week h1 {
+  text-align: center;
+  align-self: center;
+  place-items: center; }
+
+@media screen and (min-width: 60em) {
+  .col {
+    padding-left: 0;
+    padding-right: 0; } }
+.col {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-content: center;
+  text-align: center;
+  place-items: center;
+  border-top: 4px dotted black;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.week img {
+  height: auto;
+  width: 80px; }
+
+.col .low {
+  color: #59a8f5; }
+
+.col .high {
+  color: #ff2f3c; }
+
+/*# sourceMappingURL=app.css.map */
